@@ -15,12 +15,20 @@ func main() {
 		fmt.Printf("Enter first value: ")
 		scanner.Scan()
 		firstValue := scanner.Text()
-		firstValueInt, _ := strconv.Atoi(firstValue)
+		firstValueInt, err := strconv.Atoi(firstValue)
+		if err != nil {
+			fmt.Println("Please input an integer")
+			break
+		}
 
 		fmt.Printf("Enter second value: ")
 		scanner.Scan()
 		secondValue := scanner.Text()
-		secondValueInt, _ := strconv.Atoi(secondValue)
+		secondValueInt, err := strconv.Atoi(secondValue)
+		if err != nil {
+			fmt.Println("Please input an integer")
+			break
+		}
 
 		result := module.Add(firstValueInt, secondValueInt)
 
