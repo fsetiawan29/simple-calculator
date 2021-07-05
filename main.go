@@ -4,6 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
+
+	"github.com/fsetiawan29/simple-calculator/module"
 )
 
 func main() {
@@ -12,12 +15,16 @@ func main() {
 		fmt.Printf("Enter first value: ")
 		scanner.Scan()
 		firstValue := scanner.Text()
-		fmt.Println(firstValue)
+		firstValueInt, _ := strconv.Atoi(firstValue)
 
 		fmt.Printf("Enter second value: ")
 		scanner.Scan()
 		secondValue := scanner.Text()
-		fmt.Println(secondValue)
+		secondValueInt, _ := strconv.Atoi(secondValue)
+
+		result := module.Add(firstValueInt, secondValueInt)
+
+		fmt.Printf("The result is %d\n", result)
 
 		break
 	}
