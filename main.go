@@ -48,6 +48,9 @@ func main() {
 			result = module.Multiply(firstValueInt, secondValueInt)
 		} else if operation == "4" {
 			result = module.Divide(firstValueInt, secondValueInt)
+		} else {
+			fmt.Println("Please select correct operation")
+			break
 		}
 
 		fmt.Printf("The result is %d\n", result)
