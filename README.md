@@ -2,7 +2,7 @@
 
 Simple calculator is basic calculator use command line interface develop by Golang
 
-##Feature
+## Feature
 
 -  Select operation
 -  Support calculate addition
