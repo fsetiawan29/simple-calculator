@@ -42,22 +42,22 @@ func main() {
 
 		var result int
 		if operation == "1" {
-			result = module.Add(firstValueInt, secondValueInt)
+			result := module.Add(firstValueInt, secondValueInt)
 			if result < 0 {
 				log.Println(result)
 			}
 		} else if operation == "2" {
-			result = module.Subtract(firstValueInt, secondValueInt)
+			result := module.Subtract(firstValueInt, secondValueInt)
 			if result < 0 {
 				log.Println(result)
 			}
 		} else if operation == "3" {
-			result = module.Multiply(firstValueInt, secondValueInt)
+			result := module.Multiply(firstValueInt, secondValueInt)
 			if result < 0 {
 				log.Println(result)
 			}
 		} else if operation == "4" {
-			result = module.Divide(firstValueInt, secondValueInt)
+			result := module.Divide(firstValueInt, secondValueInt)
 			if result < 0 {
 				log.Println(result)
 			}
